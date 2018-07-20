@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://bbs.heirui.cn" versionCode="0.6,0.7,0.8">
+	<application setting="true">
+		<name><![CDATA[微商城]]></name>
+		<identifie><![CDATA[ewei_shopping]]></identifie>
+		<version><![CDATA[7.0.1]]></version>
+		<type><![CDATA[business]]></type>
+		<ability><![CDATA[微商城]]></ability>
+		<description><![CDATA[微商城]]></description>
+		<author><![CDATA[微鱼科技-黑锐]]></author>
+		<url><![CDATA[http://bbs.heirui.cn]]></url>
+	</application>
+	<platform>
+		<subscribes>
+		</subscribes>
+		<handles>
+			<message type="text" />
+		</handles>
+		<rule embed="false" />
+		<card embed="false" />
+	</platform>
+	<bindings>
+		<cover>
+			<entry title="商城入口设置" do="list" state="" direct="false" />
+		</cover>
+		<menu>
+			<entry title="商品分类" do="category" state="" direct="false" />
+			<entry title="商品管理" do="goods" state="" direct="false" />
+			<entry title="订单管理" do="order" state="" direct="false" />
+			<entry title="物流管理" do="express" state="" direct="false" />
+			<entry title="配送方式" do="dispatch" state="" direct="false" />
+			<entry title="幻灯片管理" do="adv" state="" direct="false" />
+			<entry title="维权与告警" do="notice" state="" direct="false" />
+		</menu>
+		<home>
+			<entry title="商城" do="list" state="" direct="false" />
+		</home>
+		<profile>
+			<entry title="我的订单" do="myorder" state="" direct="false" />
+		</profile>
+	</bindings>
+	<permissions>
+	</permissions>
+	<install><![CDATA[install.php]]></install>
+	<uninstall><![CDATA[uninstall.php]]></uninstall>
+	<upgrade><![CDATA[upgrade.php]]></upgrade>
+</manifest>
