@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{php if(isset($title)) $_W['page']['title'] = $title}{if !empty($_W['page']['title'])}{$_W['page']['title']} - {/if}{if empty($_W['page']['copyright']['sitename'])}{if IMS_FAMILY != 'x'}微鱼微信微信管理系统 - 专业的定制化微信营销服务{/if}{else}{$_W['page']['copyright']['sitename']} - 技术支持-微鱼微信{/if}</title>
+	<meta name="keywords" content="{if empty($_W['page']['copyright']['keywords'])}{if IMS_FAMILY != 'x'}微信号营销平台,微信,微信公众平台{/if}{else}{$_W['page']['copyright']['keywords']}{/if}" />
+	<meta name="description" content="{if empty($_W['page']['copyright']['description'])}{if IMS_FAMILY != 'x'}微鱼微信国内最完善移动网站及移动互联网技术解决方案。{/if}{else}{$_W['page']['copyright']['description']}{/if}" />
+	<link rel="shortcut icon" href="{$_W['siteroot']}{$_W['config']['upload']['attachdir']}/{if !empty($_W['setting']['copyright']['icon'])}{$_W['setting']['copyright']['icon']}{else}images/global/wechat.jpg{/if}" />
+	<!---默认-->
+	<link href="./resource/css/bootstrap.min.css" rel="stylesheet">
+	<link href="./resource/css/font-awesome.min.css" rel="stylesheet">
+	<link href="./resource/css/common.css" rel="stylesheet">
+	<script>var require = { urlArgs: 'v={php echo date('YmdH');}' };</script>
+	<script src="./resource/js/lib/jquery-1.11.1.min.js"></script>
+	<script src="./resource/js/app/util.js"></script>
+	<script src="./resource/js/require.js"></script>
+	<script src="./resource/js/app/config.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="./themes/weiyu/static/assets/css/login.css">
+	<!--[if lt IE 9]>
+		<script src="./resource/js/html5shiv.min.js"></script>
+		<script src="./resource/js/respond.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript">
+	if(navigator.appName == 'Microsoft Internet Explorer'){
+		if(navigator.userAgent.indexOf("MSIE 5.0")>0 || navigator.userAgent.indexOf("MSIE 6.0")>0 || navigator.userAgent.indexOf("MSIE 7.0")>0) {
+			alert('您使用的 IE 浏览器版本过低, 推荐使用 Chrome 浏览器或 IE8 及以上版本浏览器.');
+		}
+	}
+	
+	window.sysinfo = {
+		{if !empty($_W['uniacid'])}
+				'uniacid': '{$_W['uniacid']}',
+		{/if}
+		{if !empty($_W['acid'])}
+				'acid': '{$_W['acid']}',
+		{/if}
+		{if !empty($_W['openid'])}
+				'openid': '{$_W['openid']}',
+		{/if}
+		{if !empty($_W['uid'])}
+				'uid': '{$_W['uid']}',
+		{/if}
+				'siteroot': '{$_W['siteroot']}',
+				'siteurl': '{$_W['siteurl']}',
+				'attachurl': '{$_W['attachurl']}',
+				'attachurl_local': '{$_W['attachurl_local']}',
+				'attachurl_remote': '{$_W['attachurl_remote']}',
+		{if defined('MODULE_URL')}
+				'MODULE_URL': '{MODULE_URL}',
+		{/if}
+				'cookie' : {'pre': '{$_W['config']['cookie']['pre']}'}
+		};
+	</script>
+	</head>
+	<body style="overflow-y:auto;">
+<div style="background-color:#138ed4;">
+      <div class="container">
+    <div class="content_warp">
+          <div style="height:60px; overflow:hidden; zoom:1;">
+        <div class="logo"><span style="color:#fff;">微鱼微信</span><span style="color:#fff;"></span></div>
+        <div style="float:right;"><a href="http://bbs.heirui.cn" class="home-link"><i class="fa fa-home"></i>&nbsp;进入官方网站</a></div>
+      </div>
+        </div>
+  </div>
+    </div>
+<div class="contentwarp">
+<div class="imgbg"> </div>
+<div class="textwarp">
+      <div class="text">
+    <div class="loginwarp">
+          <p class="loginp">账号登陆</p>
+          <form action="" method="post" role="form" id="form1" onsubmit="return formcheck();">
+        <div >
+              <input name="username" type="text" class="username" placeholder="请输入用户名登录">
+            </div>
+        <div>
+              <input name="password" type="password" class="password" placeholder="请输入登录密码">
+            </div>
+        {if !empty($_W['setting']['copyright']['verifycode'])}
+        <div>
+              <input name="verify" type="text" placeholder="请输入验证码" class="verify" >
+              <a href="javascript:;" id="toggle" class="verifyimg"><img id="imgverify" src="{php echo url('utility/code')}" title="点击图片更换验证码"/><span> 换一张</span></a> </div>
+        {/if}
+        <div>
+              <input type="submit" id="submit"  name="submit" class="submit"  value="登录"/>
+              <input name="token" value="{$_W['token']}" type="hidden" />
+            </div>
+        <div class="error"><span>+</span></div>
+        <a href="{url 'user/register'}" class="btn btn-link btn-lg regbtn">免费注册</a>
+      </form>
+        </div>
+  </div>
+    </div>
+<div class="copyright">
+      <p class="link">  <a target="_blank" href="https://mp.weixin.qq.com/" >微信公众号</a> <b>|</b> <a target="_blank" href="https://open.weixin.qq.com/" >微信开发平台</a> <b>|</b> <a target="_blank" href="https://www.aliyun.com/" >阿里云</a> <b>|</b> <a target="_blank" href="https://www.qcloud.com/" >腾讯云</a> <b>|</b> <a target="_blank" href="https://pay.weixin.qq.com/" >微信支付</a> <b>|</b> <a target="_blank" href="https://www.alipay.com/" >支付宝</a> </p>
+      <p> <a href="#nogo" >关于我们</a> <a href="#nogo" >合作伙伴</a> <a href="#nogo" >营销中心</a> <a href="#nogo" >联系客服</a> <a href="#nogo" >开放平台</a> <a href="#nogo" >诚征英才</a> <a href="#nogo" >联系我们</a> <a href="#nogo" >网站地图</a> <a href="#nogo" >法律声明</a> <em>(c) 2017 微鱼微信 版权所有</em> </p>
+      <p style="padding-top:6px;"> <span>网站备案号<a href="#nogo" >冀ICP备13015286号-3</a></span> </p>
+    </div>
+<!-- Javascript --> 
+<script type="text/javascript">
+$('#toggle').click(function() {
+
+	$('#imgverify').prop('src', '{php echo url('utility/code')}r='+Math.round(new Date().getTime()));
+
+	return false;
+
+});
+
+{if !empty($_W['setting']['copyright']['verifycode'])}
+
+
+	$('#form1').submit(function() {
+
+		var verify = $(':text[name="verify"]').val();
+
+		if (verify == '') {
+
+			alert('请填写验证码');
+
+			return false;
+
+		}
+
+	});
+
+{/if}
+
+</script>
+</body>
+</html>

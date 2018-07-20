@@ -1,0 +1,40 @@
+2018-07-17 14:27:28 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1OU62I3pUUEPB8yYx30ZcCU]]></FromUserName>
+<CreateTime>1531808849</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://www.fphealthy.com/shop/app/index.php?i=4&c=entry&eid=146]]></EventKey>
+<MenuId>411154211</MenuId>
+</xml>
+
+2018-07-17 14:27:28 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1OU62I3pUUEPB8yYx30ZcCU',
+    'createtime' => '1531808849',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://www.fphealthy.com/shop/app/index.php?i=4&c=entry&eid=146',
+    'menuid' => '411154211',
+    'from' => 'oBNJw1OU62I3pUUEPB8yYx30ZcCU',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1531808849',
+    'type' => 'text',
+    'content' => 'http://www.fphealthy.com/shop/app/index.php?i=4&c=entry&eid=146',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2018-07-17 14:27:28 response :
+------------
+

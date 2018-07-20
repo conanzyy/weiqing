@@ -1,0 +1,35 @@
+2018-05-12 06:44:37 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1K4O2hw1zFwX4TTcDEyW9LM]]></FromUserName>
+<CreateTime>1526078677</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[annual_renew]]></Event>
+<ExpiredTime>1533778645</ExpiredTime>
+</xml>
+
+2018-05-12 06:44:37 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'createtime' => '1526078677',
+    'msgtype' => 'event',
+    'event' => 'annual_renew',
+    'expiredtime' => '1533778645',
+    'from' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1526078677',
+    'type' => 'event',
+  ),
+)
+
+2018-05-12 06:44:37 response :
+------------
+

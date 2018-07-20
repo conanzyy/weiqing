@@ -1,0 +1,627 @@
+2017-08-04 00:00:39 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t1LIij3tdiNlVGcPCvjFVxg]]></FromUserName>
+<CreateTime>1501776040</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-08-04 00:07:12 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t1LIij3tdiNlVGcPCvjFVxg]]></FromUserName>
+<CreateTime>1501776431</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-08-04 00:07:12 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t1LIij3tdiNlVGcPCvjFVxg',
+    'createtime' => '1501776431',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oOwN2t1LIij3tdiNlVGcPCvjFVxg',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501776431',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2017-08-04 00:07:12 response :
+------------
+
+2017-08-04 00:07:43 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t1LIij3tdiNlVGcPCvjFVxg]]></FromUserName>
+<CreateTime>1501776463</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[微商城]]></Content>
+<MsgId>6450080794924608682</MsgId>
+</xml>
+
+2017-08-04 00:07:43 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t1LIij3tdiNlVGcPCvjFVxg',
+    'createtime' => '1501776463',
+    'msgtype' => 'text',
+    'content' => '微商城',
+    'msgid' => '6450080794924608682',
+    'from' => 'oOwN2t1LIij3tdiNlVGcPCvjFVxg',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501776463',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '11',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '16',
+    'rid' => '11',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '微商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-04 00:07:43 response :
+------------
+Array:
+FromUserName : gh_43531f12a058 ;
+ToUserName : oOwN2t1LIij3tdiNlVGcPCvjFVxg ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-04 00:31:59 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t1LIij3tdiNlVGcPCvjFVxg]]></FromUserName>
+<CreateTime>1501777918</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[商城]]></Content>
+<MsgId>6450087044102024849</MsgId>
+</xml>
+
+2017-08-04 00:31:59 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t1LIij3tdiNlVGcPCvjFVxg',
+    'createtime' => '1501777918',
+    'msgtype' => 'text',
+    'content' => '商城',
+    'msgid' => '6450087044102024849',
+    'from' => 'oOwN2t1LIij3tdiNlVGcPCvjFVxg',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501777918',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-04 00:31:59 response :
+------------
+Array:
+FromUserName : gh_43531f12a058 ;
+ToUserName : oOwN2t1LIij3tdiNlVGcPCvjFVxg ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-04 00:42:49 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t0AvLOzosWNr2cds0EOQHZo]]></FromUserName>
+<CreateTime>1501778568</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[微商城]]></Content>
+<MsgId>6450089835830767410</MsgId>
+</xml>
+
+2017-08-04 00:42:49 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'createtime' => '1501778568',
+    'msgtype' => 'text',
+    'content' => '微商城',
+    'msgid' => '6450089835830767410',
+    'from' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501778568',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '11',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '16',
+    'rid' => '11',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '微商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-04 00:42:49 response :
+------------
+Array:
+FromUserName : gh_43531f12a058 ;
+ToUserName : oOwN2t0AvLOzosWNr2cds0EOQHZo ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-04 23:09:03 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t-lseHe7y2DBLjvTcGwdhH4]]></FromUserName>
+<CreateTime>1501859344</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-08-04 23:09:03 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t-lseHe7y2DBLjvTcGwdhH4',
+    'createtime' => '1501859344',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oOwN2t-lseHe7y2DBLjvTcGwdhH4',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501859344',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2017-08-04 23:09:03 response :
+------------
+
+2017-08-04 23:10:02 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t-lseHe7y2DBLjvTcGwdhH4]]></FromUserName>
+<CreateTime>1501859403</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[微商城]]></Content>
+<MsgId>6450437019512177037</MsgId>
+</xml>
+
+2017-08-04 23:10:02 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t-lseHe7y2DBLjvTcGwdhH4',
+    'createtime' => '1501859403',
+    'msgtype' => 'text',
+    'content' => '微商城',
+    'msgid' => '6450437019512177037',
+    'from' => 'oOwN2t-lseHe7y2DBLjvTcGwdhH4',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501859403',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '11',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '16',
+    'rid' => '11',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '微商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-04 23:10:02 response :
+------------
+Array:
+FromUserName : gh_43531f12a058 ;
+ToUserName : oOwN2t-lseHe7y2DBLjvTcGwdhH4 ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-04 23:40:45 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_af4795843db6]]></ToUserName>
+<FromUserName><![CDATA[oxfSkt6mQF03dN46HqS61Cf5cPkw]]></FromUserName>
+<CreateTime>1501861246</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-08-04 23:40:45 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_af4795843db6',
+    'fromusername' => 'oxfSkt6mQF03dN46HqS61Cf5cPkw',
+    'createtime' => '1501861246',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oxfSkt6mQF03dN46HqS61Cf5cPkw',
+    'to' => 'gh_af4795843db6',
+    'time' => '1501861246',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2017-08-04 23:40:45 response :
+------------
+
+2017-08-04 23:40:50 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_af4795843db6]]></ToUserName>
+<FromUserName><![CDATA[oxfSkt6mQF03dN46HqS61Cf5cPkw]]></FromUserName>
+<CreateTime>1501861250</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[商城]]></Content>
+<MsgId>6450444952299801945</MsgId>
+</xml>
+
+2017-08-04 23:40:50 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_af4795843db6',
+    'fromusername' => 'oxfSkt6mQF03dN46HqS61Cf5cPkw',
+    'createtime' => '1501861250',
+    'msgtype' => 'text',
+    'content' => '商城',
+    'msgid' => '6450444952299801945',
+    'from' => 'oxfSkt6mQF03dN46HqS61Cf5cPkw',
+    'to' => 'gh_af4795843db6',
+    'time' => '1501861250',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2017-08-04 23:40:50 response :
+------------
+
+2017-08-04 23:41:30 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_af4795843db6]]></ToUserName>
+<FromUserName><![CDATA[oxfSkt6mQF03dN46HqS61Cf5cPkw]]></FromUserName>
+<CreateTime>1501861291</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[商城]]></Content>
+<MsgId>6450445128393461086</MsgId>
+</xml>
+
+2017-08-04 23:41:30 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_af4795843db6',
+    'fromusername' => 'oxfSkt6mQF03dN46HqS61Cf5cPkw',
+    'createtime' => '1501861291',
+    'msgtype' => 'text',
+    'content' => '商城',
+    'msgid' => '6450445128393461086',
+    'from' => 'oxfSkt6mQF03dN46HqS61Cf5cPkw',
+    'to' => 'gh_af4795843db6',
+    'time' => '1501861291',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '13',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '18',
+    'rid' => '13',
+    'uniacid' => '3',
+    'module' => 'cover',
+    'content' => '商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-04 23:41:30 response :
+------------
+Array:
+FromUserName : gh_af4795843db6 ;
+ToUserName : oxfSkt6mQF03dN46HqS61Cf5cPkw ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-04 23:44:19 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_af4795843db6]]></ToUserName>
+<FromUserName><![CDATA[oxfSkt6mQF03dN46HqS61Cf5cPkw]]></FromUserName>
+<CreateTime>1501861460</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[微商城]]></Content>
+<MsgId>6450445854242934134</MsgId>
+</xml>
+
+2017-08-04 23:44:19 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_af4795843db6',
+    'fromusername' => 'oxfSkt6mQF03dN46HqS61Cf5cPkw',
+    'createtime' => '1501861460',
+    'msgtype' => 'text',
+    'content' => '微商城',
+    'msgid' => '6450445854242934134',
+    'from' => 'oxfSkt6mQF03dN46HqS61Cf5cPkw',
+    'to' => 'gh_af4795843db6',
+    'time' => '1501861460',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '14',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '19',
+    'rid' => '14',
+    'uniacid' => '3',
+    'module' => 'cover',
+    'content' => '微商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-04 23:44:19 response :
+------------
+Array:
+FromUserName : gh_af4795843db6 ;
+ToUserName : oxfSkt6mQF03dN46HqS61Cf5cPkw ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-04 23:52:59 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_af4795843db6]]></ToUserName>
+<FromUserName><![CDATA[oxfSktwXjnB5ImsDCdxoielItPVA]]></FromUserName>
+<CreateTime>1501861980</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-08-04 23:52:59 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_af4795843db6',
+    'fromusername' => 'oxfSktwXjnB5ImsDCdxoielItPVA',
+    'createtime' => '1501861980',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oxfSktwXjnB5ImsDCdxoielItPVA',
+    'to' => 'gh_af4795843db6',
+    'time' => '1501861980',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2017-08-04 23:52:59 response :
+------------
+
+2017-08-04 23:53:12 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_af4795843db6]]></ToUserName>
+<FromUserName><![CDATA[oxfSktwXjnB5ImsDCdxoielItPVA]]></FromUserName>
+<CreateTime>1501861993</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[维商城]]></Content>
+<MsgId>6450448143460502990</MsgId>
+</xml>
+
+2017-08-04 23:53:12 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_af4795843db6',
+    'fromusername' => 'oxfSktwXjnB5ImsDCdxoielItPVA',
+    'createtime' => '1501861993',
+    'msgtype' => 'text',
+    'content' => '维商城',
+    'msgid' => '6450448143460502990',
+    'from' => 'oxfSktwXjnB5ImsDCdxoielItPVA',
+    'to' => 'gh_af4795843db6',
+    'time' => '1501861993',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2017-08-04 23:53:12 response :
+------------
+
+2017-08-04 23:53:29 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_af4795843db6]]></ToUserName>
+<FromUserName><![CDATA[oxfSktwXjnB5ImsDCdxoielItPVA]]></FromUserName>
+<CreateTime>1501862010</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[微商城]]></Content>
+<MsgId>6450448216474947023</MsgId>
+</xml>
+
+2017-08-04 23:53:29 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_af4795843db6',
+    'fromusername' => 'oxfSktwXjnB5ImsDCdxoielItPVA',
+    'createtime' => '1501862010',
+    'msgtype' => 'text',
+    'content' => '微商城',
+    'msgid' => '6450448216474947023',
+    'from' => 'oxfSktwXjnB5ImsDCdxoielItPVA',
+    'to' => 'gh_af4795843db6',
+    'time' => '1501862010',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '14',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '19',
+    'rid' => '14',
+    'uniacid' => '3',
+    'module' => 'cover',
+    'content' => '微商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-04 23:53:29 response :
+------------
+Array:
+FromUserName : gh_af4795843db6 ;
+ToUserName : oxfSktwXjnB5ImsDCdxoielItPVA ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+

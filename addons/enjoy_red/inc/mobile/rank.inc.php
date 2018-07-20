@@ -1,0 +1,68 @@
+<?php
+global $_W, $_GPC;
+$modulePublic = '../addons/enjoy_red/public/';
+require_once MB_ROOT . '/controller/Fans.class.php';
+require_once MB_ROOT . '/controller/Act.class.php';
+
+$fans = new Fans();
+$act = new Act();
+$puid=intval($_GET['puid']);
+	//授权登录，获取粉丝信息
+	$user = $this->auth($puid);
+// $user['openid']="omWcNs4YdxWrGcUswqMlg2Nwk7nc";
+// $user['uniacid']="5";
+
+	//取活动信息
+	$actdetail=$act->getact();
+	//提现
+// 	$county=pdo_fetchcolumn("select ABS(sum(money)) from ".tablename('enjoy_red_log')." where openid='".$user['openid']."' and uniacid=".$user['uniacid']." and money<0");
+// 	if(empty($county)){
+// 		$county=0;
+// 	}
+// 	//累计的钱
+// 	$countm=pdo_fetchcolumn("select sum(money) from ".tablename('enjoy_red_log')." where openid='".$user['openid']."' and uniacid=".$user['uniacid']." and money>0");
+// 	if(empty($countm)){
+// 		$countm=0;
+// 	}
+	$fans=pdo_fetch("select cashed,total from ".tablename('enjoy_red_fans')." where uniacid=".$user['uniacid']." and openid='".$user['openid']."'");
+	$county=$fans['total']-$fans['cashed'];
+	if(empty($county)){
+		$county=0;
+	}
+	//累计的钱
+	$countm=$fans['total'];
+	if(empty($countm)){
+		$countm=0;
+	}
+//取出活动前几名
+// $ranks=pdo_fetchall("select a.*,SUM(b.money) as sum from ".tablename('enjoy_red_fans')." as a left join ".tablename('enjoy_red_log')." as b on a.openid=b.openid
+// 		where b.uniacid=".$user['uniacid']." and a.uniacid=".$user['uniacid']." and b.money>0 group by b.openid order by SUM(b.money) desc LIMIT 20");
+// var_dump($ranks);
+// exit();
+$ranks=pdo_fetchall("select avatar,nickname,total from ".tablename('enjoy_red_fans')." where uniacid=".$user['uniacid']." and total>0 order by total+0 desc LIMIT 20");
+// var_dump($ranks);
+// exit();
+//循环递增出一个数组json
+for($i=0;$i<count($ranks);$i++){
+// 	if(empty($ranks[$i][total])){
+// 		$ranks[$i][total]=0;
+// 	}
+// 	{"img": "http://stc.weimob.com/img/magpiebridge/icon_head_empty.png", "name": "sxk", "score": 3.79}
+	$str.='{"img":"'.$ranks[$i][avatar].'","name":"'.$ranks[$i][nickname].'","score":'.$ranks[$i][total].'},';
+}
+// var_dump($str);
+// exit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+include $this->template('rank');

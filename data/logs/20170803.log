@@ -1,0 +1,760 @@
+2017-08-03 01:50:18 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t0AvLOzosWNr2cds0EOQHZo]]></FromUserName>
+<CreateTime>1501696218</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[南京天气]]></Content>
+<MsgId>6449736145273907170</MsgId>
+</xml>
+
+2017-08-03 01:50:18 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'createtime' => '1501696218',
+    'msgtype' => 'text',
+    'content' => '南京天气',
+    'msgid' => '6449736145273907170',
+    'from' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501696218',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'userapi',
+  'rule' => '1',
+  'priority' => '255',
+  'keyword' => 
+  array (
+    'id' => '1',
+    'rid' => '1',
+    'uniacid' => '0',
+    'module' => 'userapi',
+    'content' => '^.+天气$',
+    'type' => '3',
+    'displayorder' => '255',
+    'status' => '1',
+  ),
+)
+
+2017-08-03 01:50:18 response :
+------------
+Array:
+FromUserName : gh_43531f12a058 ;
+ToUserName : oOwN2t0AvLOzosWNr2cds0EOQHZo ;
+MsgType : text ;
+Content : 南京今日天气
+今天白天雷阵雨，32摄氏度。
+西南风，4-5
+今天夜间阴，27摄氏度。
+西南风，3-4
+==================
+【穿衣指数】：短袖衫、短裙、短裤、薄型T恤衫、敞领短袖棉衫
+
+【感冒指数】：低发期环境温度较高，要提防长时间在空调环境中引发的空调病；
+
+【空调指数】：适宜开启空调
+
+【污染物扩散条件】：良有利于空气污染物扩散
+
+【洗车指数】：不适宜洗车后当日有降水、大风或沙尘天气，不适宜洗车
+
+【运动指数】：不适宜天气湿热，不适宜户外运动；
+
+【紫外线指数】：最弱紫外线最弱
+
+【体感度指数】：较热户外活动不适宜在中午前后展开。
+ ;
+
+2017-08-03 01:50:21 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t0AvLOzosWNr2cds0EOQHZo]]></FromUserName>
+<CreateTime>1501696221</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[商城]]></Content>
+<MsgId>6449736158158809060</MsgId>
+</xml>
+
+2017-08-03 01:50:21 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'createtime' => '1501696221',
+    'msgtype' => 'text',
+    'content' => '商城',
+    'msgid' => '6449736158158809060',
+    'from' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501696221',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2017-08-03 01:50:21 response :
+------------
+
+2017-08-03 02:06:47 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t0AvLOzosWNr2cds0EOQHZo]]></FromUserName>
+<CreateTime>1501697207</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[商城]]></Content>
+<MsgId>6449740392996563041</MsgId>
+</xml>
+
+2017-08-03 02:06:47 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'createtime' => '1501697207',
+    'msgtype' => 'text',
+    'content' => '商城',
+    'msgid' => '6449740392996563041',
+    'from' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501697207',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-03 02:06:47 response :
+------------
+Array:
+FromUserName : gh_43531f12a058 ;
+ToUserName : oOwN2t0AvLOzosWNr2cds0EOQHZo ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-03 02:10:40 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t0AvLOzosWNr2cds0EOQHZo]]></FromUserName>
+<CreateTime>1501697440</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[商城]]></Content>
+<MsgId>6449741393723943036</MsgId>
+</xml>
+
+2017-08-03 02:10:40 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'createtime' => '1501697440',
+    'msgtype' => 'text',
+    'content' => '商城',
+    'msgid' => '6449741393723943036',
+    'from' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501697440',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-03 02:10:40 response :
+------------
+Array:
+FromUserName : gh_43531f12a058 ;
+ToUserName : oOwN2t0AvLOzosWNr2cds0EOQHZo ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-03 07:23:38 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t0AvLOzosWNr2cds0EOQHZo]]></FromUserName>
+<CreateTime>1501716218</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[1]]></Content>
+<MsgId>6449822044619828894</MsgId>
+</xml>
+
+2017-08-03 07:23:38 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'createtime' => '1501716218',
+    'msgtype' => 'text',
+    'content' => '1',
+    'msgid' => '6449822044619828894',
+    'from' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501716218',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2017-08-03 07:23:38 response :
+------------
+
+2017-08-03 07:23:42 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t0AvLOzosWNr2cds0EOQHZo]]></FromUserName>
+<CreateTime>1501716222</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[南京天气]]></Content>
+<MsgId>6449822061799698080</MsgId>
+</xml>
+
+2017-08-03 07:23:42 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'createtime' => '1501716222',
+    'msgtype' => 'text',
+    'content' => '南京天气',
+    'msgid' => '6449822061799698080',
+    'from' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501716222',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'userapi',
+  'rule' => '1',
+  'priority' => '255',
+  'keyword' => 
+  array (
+    'id' => '1',
+    'rid' => '1',
+    'uniacid' => '0',
+    'module' => 'userapi',
+    'content' => '^.+天气$',
+    'type' => '3',
+    'displayorder' => '255',
+    'status' => '1',
+  ),
+)
+
+2017-08-03 07:23:42 response :
+------------
+Array:
+FromUserName : gh_43531f12a058 ;
+ToUserName : oOwN2t0AvLOzosWNr2cds0EOQHZo ;
+MsgType : text ;
+Content : 南京今日天气
+今天白天雷阵雨，32摄氏度。
+西南风，4-5
+今天夜间阴，27摄氏度。
+西南风，3-4
+==================
+【穿衣指数】：短袖衫、短裙、短裤、薄型T恤衫、敞领短袖棉衫
+
+【感冒指数】：低发期环境温度较高，要提防长时间在空调环境中引发的空调病；
+
+【空调指数】：适宜开启空调
+
+【污染物扩散条件】：良有利于空气污染物扩散
+
+【洗车指数】：不适宜洗车后当日有降水、大风或沙尘天气，不适宜洗车
+
+【运动指数】：不适宜天气湿热，不适宜户外运动；
+
+【紫外线指数】：最弱紫外线最弱
+
+【体感度指数】：较热户外活动不适宜在中午前后展开。
+ ;
+
+2017-08-03 08:56:50 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t0AvLOzosWNr2cds0EOQHZo]]></FromUserName>
+<CreateTime>1501721810</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[刮刮乐]]></Content>
+<MsgId>6449846062076949790</MsgId>
+</xml>
+
+2017-08-03 08:56:50 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'createtime' => '1501721810',
+    'msgtype' => 'text',
+    'content' => '刮刮乐',
+    'msgid' => '6449846062076949790',
+    'from' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501721810',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'ewei_scratch',
+  'rule' => '10',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '14',
+    'rid' => '10',
+    'uniacid' => '2',
+    'module' => 'ewei_scratch',
+    'content' => '刮刮乐',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-03 08:56:50 response :
+------------
+Array:
+FromUserName : gh_43531f12a058 ;
+ToUserName : oOwN2t0AvLOzosWNr2cds0EOQHZo ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-03 23:22:22 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1501773765</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-08-03 23:22:22 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'toUser',
+    'fromusername' => 'fromUser',
+    'createtime' => '1501773765',
+    'msgtype' => 'text',
+    'content' => '测试内容',
+    'msgid' => '1234567890123456',
+    'from' => 'fromUser',
+    'to' => 'toUser',
+    'time' => '1501773765',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2017-08-03 23:22:22 response :
+------------
+
+2017-08-03 23:22:28 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1501773771</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-08-03 23:22:28 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'toUser',
+    'fromusername' => 'fromUser',
+    'createtime' => '1501773771',
+    'msgtype' => 'text',
+    'content' => '测试内容',
+    'msgid' => '1234567890123456',
+    'from' => 'fromUser',
+    'to' => 'toUser',
+    'time' => '1501773771',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2017-08-03 23:22:28 response :
+------------
+
+2017-08-03 23:22:29 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1501773772</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-08-03 23:22:29 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'toUser',
+    'fromusername' => 'fromUser',
+    'createtime' => '1501773772',
+    'msgtype' => 'text',
+    'content' => '测试内容',
+    'msgid' => '1234567890123456',
+    'from' => 'fromUser',
+    'to' => 'toUser',
+    'time' => '1501773772',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2017-08-03 23:22:29 response :
+------------
+
+2017-08-03 23:22:31 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1501773774</CreateTime><MsgType><![CDATA[image]]></MsgType><PicUrl><![CDATA[http://www.baidu.com/img/bdlogo.gif]]></PicUrl><MsgId>1234567890123456</MsgId></xml>
+
+2017-08-03 23:22:32 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'toUser',
+    'fromusername' => 'fromUser',
+    'createtime' => '1501773774',
+    'msgtype' => 'image',
+    'picurl' => 'http://www.baidu.com/img/bdlogo.gif',
+    'msgid' => '1234567890123456',
+    'from' => 'fromUser',
+    'to' => 'toUser',
+    'time' => '1501773774',
+    'type' => 'image',
+    'event' => NULL,
+    'url' => 'http://www.baidu.com/img/bdlogo.gif',
+  ),
+)
+
+2017-08-03 23:22:32 response :
+------------
+
+2017-08-03 23:22:36 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1501773779</CreateTime><MsgType><![CDATA[link]]></MsgType><Title><![CDATA[测试链接]]></Title><Description><![CDATA[测试链接描述]]></Description><Url><![CDATA[http://baidu.com]]></Url><MsgId>1234567890123456</MsgId></xml>
+
+2017-08-03 23:22:36 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'toUser',
+    'fromusername' => 'fromUser',
+    'createtime' => '1501773779',
+    'msgtype' => 'link',
+    'title' => '测试链接',
+    'description' => '测试链接描述',
+    'url' => 'http://baidu.com',
+    'msgid' => '1234567890123456',
+    'from' => 'fromUser',
+    'to' => 'toUser',
+    'time' => '1501773779',
+    'type' => 'link',
+    'event' => NULL,
+  ),
+)
+
+2017-08-03 23:22:36 response :
+------------
+
+2017-08-03 23:41:39 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t0AvLOzosWNr2cds0EOQHZo]]></FromUserName>
+<CreateTime>1501774900</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[商城]]></Content>
+<MsgId>6450074081890724434</MsgId>
+</xml>
+
+2017-08-03 23:41:39 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'createtime' => '1501774900',
+    'msgtype' => 'text',
+    'content' => '商城',
+    'msgid' => '6450074081890724434',
+    'from' => 'oOwN2t0AvLOzosWNr2cds0EOQHZo',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501774900',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-03 23:41:39 response :
+------------
+Array:
+FromUserName : gh_43531f12a058 ;
+ToUserName : oOwN2t0AvLOzosWNr2cds0EOQHZo ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-03 23:42:47 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t1LIij3tdiNlVGcPCvjFVxg]]></FromUserName>
+<CreateTime>1501774968</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-08-03 23:42:47 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t1LIij3tdiNlVGcPCvjFVxg',
+    'createtime' => '1501774968',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oOwN2t1LIij3tdiNlVGcPCvjFVxg',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501774968',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2017-08-03 23:42:47 response :
+------------
+
+2017-08-03 23:43:02 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t1LIij3tdiNlVGcPCvjFVxg]]></FromUserName>
+<CreateTime>1501774983</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[商城]]></Content>
+<MsgId>6450074438373010032</MsgId>
+</xml>
+
+2017-08-03 23:43:02 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t1LIij3tdiNlVGcPCvjFVxg',
+    'createtime' => '1501774983',
+    'msgtype' => 'text',
+    'content' => '商城',
+    'msgid' => '6450074438373010032',
+    'from' => 'oOwN2t1LIij3tdiNlVGcPCvjFVxg',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501774983',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '9',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '13',
+    'rid' => '9',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-03 23:43:02 response :
+------------
+Array:
+FromUserName : gh_43531f12a058 ;
+ToUserName : oOwN2t1LIij3tdiNlVGcPCvjFVxg ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-03 23:59:03 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_43531f12a058]]></ToUserName>
+<FromUserName><![CDATA[oOwN2t1LIij3tdiNlVGcPCvjFVxg]]></FromUserName>
+<CreateTime>1501775944</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[微商城]]></Content>
+<MsgId>6450078565836581879</MsgId>
+</xml>
+
+2017-08-03 23:59:03 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_43531f12a058',
+    'fromusername' => 'oOwN2t1LIij3tdiNlVGcPCvjFVxg',
+    'createtime' => '1501775944',
+    'msgtype' => 'text',
+    'content' => '微商城',
+    'msgid' => '6450078565836581879',
+    'from' => 'oOwN2t1LIij3tdiNlVGcPCvjFVxg',
+    'to' => 'gh_43531f12a058',
+    'time' => '1501775944',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+  'module' => 'cover',
+  'rule' => '11',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '16',
+    'rid' => '11',
+    'uniacid' => '2',
+    'module' => 'cover',
+    'content' => '微商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-03 23:59:03 response :
+------------
+Array:
+FromUserName : gh_43531f12a058 ;
+ToUserName : oOwN2t1LIij3tdiNlVGcPCvjFVxg ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+

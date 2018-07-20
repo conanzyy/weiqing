@@ -1,0 +1,257 @@
+2018-07-14 00:22:29 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1K4O2hw1zFwX4TTcDEyW9LM]]></FromUserName>
+<CreateTime>1531498948</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[wx_verify_pay_succ]]></Event>
+<OrderId><![CDATA[15307966049827717742]]></OrderId>
+</xml>
+
+2018-07-14 00:22:29 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'createtime' => '1531498948',
+    'msgtype' => 'event',
+    'event' => 'wx_verify_pay_succ',
+    'orderid' => '15307966049827717742',
+    'from' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1531498948',
+    'type' => 'event',
+  ),
+)
+
+2018-07-14 00:22:29 response :
+------------
+
+2018-07-14 00:22:48 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1K4O2hw1zFwX4TTcDEyW9LM]]></FromUserName>
+<CreateTime>1531498968</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[wx_verify_dispatch]]></Event>
+<Provider><![CDATA[成都知道创宇信息技术有限公司]]></Provider>
+<Contact><![CDATA[咨询电话：028-85182726，邮箱：wx@anquan.org，咨询时间：周一至周五（工作日）9：00-18：00。]]></Contact>
+<DispatchTime>1531498958</DispatchTime>
+</xml>
+
+2018-07-14 00:22:48 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'createtime' => '1531498968',
+    'msgtype' => 'event',
+    'event' => 'wx_verify_dispatch',
+    'provider' => '成都知道创宇信息技术有限公司',
+    'contact' => '咨询电话：028-85182726，邮箱：wx@anquan.org，咨询时间：周一至周五（工作日）9：00-18：00。',
+    'dispatchtime' => '1531498958',
+    'from' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1531498968',
+    'type' => 'event',
+  ),
+)
+
+2018-07-14 00:22:48 response :
+------------
+
+2018-07-14 11:10:56 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1K4O2hw1zFwX4TTcDEyW9LM]]></FromUserName>
+<CreateTime>1531537856</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[wx_verify_refill]]></Event>
+<RefillTime>1531537856</RefillTime>
+<RefillReason><![CDATA[请修改平台帐号联系人为《营业执照》上的经营者（法人）。]]></RefillReason>
+</xml>
+
+2018-07-14 11:10:56 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'createtime' => '1531537856',
+    'msgtype' => 'event',
+    'event' => 'wx_verify_refill',
+    'refilltime' => '1531537856',
+    'refillreason' => '请修改平台帐号联系人为《营业执照》上的经营者（法人）。',
+    'from' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1531537856',
+    'type' => 'event',
+  ),
+)
+
+2018-07-14 11:10:56 response :
+------------
+
+2018-07-14 11:18:05 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1K4O2hw1zFwX4TTcDEyW9LM]]></FromUserName>
+<CreateTime>1531538285</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[wx_verify_dispatch]]></Event>
+<Provider><![CDATA[成都知道创宇信息技术有限公司]]></Provider>
+<Contact><![CDATA[咨询电话：028-85182726，邮箱：wx@anquan.org，咨询时间：周一至周五（工作日）9：00-18：00。]]></Contact>
+<DispatchTime>1531498958</DispatchTime>
+</xml>
+
+2018-07-14 11:18:05 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'createtime' => '1531538285',
+    'msgtype' => 'event',
+    'event' => 'wx_verify_dispatch',
+    'provider' => '成都知道创宇信息技术有限公司',
+    'contact' => '咨询电话：028-85182726，邮箱：wx@anquan.org，咨询时间：周一至周五（工作日）9：00-18：00。',
+    'dispatchtime' => '1531498958',
+    'from' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1531538285',
+    'type' => 'event',
+  ),
+)
+
+2018-07-14 11:18:05 response :
+------------
+
+2018-07-14 14:36:58 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1K4O2hw1zFwX4TTcDEyW9LM]]></FromUserName>
+<CreateTime>1531550218</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[wx_verify_refill]]></Event>
+<RefillTime>1531550218</RefillTime>
+<RefillReason><![CDATA[我是知道创宇微信认证工作人员，你的电话无法接通，为了您能尽快通过认证使用公众号，建议您在今日内致电028-85182726转9520联系审核专员进行资料核实。]]></RefillReason>
+</xml>
+
+2018-07-14 14:36:58 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'createtime' => '1531550218',
+    'msgtype' => 'event',
+    'event' => 'wx_verify_refill',
+    'refilltime' => '1531550218',
+    'refillreason' => '我是知道创宇微信认证工作人员，你的电话无法接通，为了您能尽快通过认证使用公众号，建议您在今日内致电028-85182726转9520联系审核专员进行资料核实。',
+    'from' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1531550218',
+    'type' => 'event',
+  ),
+)
+
+2018-07-14 14:36:58 response :
+------------
+
+2018-07-14 16:57:42 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1K4O2hw1zFwX4TTcDEyW9LM]]></FromUserName>
+<CreateTime>1531558662</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[qualification_verify_success]]></Event>
+<ExpiredTime>1565314645</ExpiredTime>
+</xml>
+
+2018-07-14 16:57:42 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'createtime' => '1531558662',
+    'msgtype' => 'event',
+    'event' => 'qualification_verify_success',
+    'expiredtime' => '1565314645',
+    'from' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1531558662',
+    'type' => 'event',
+  ),
+)
+
+2018-07-14 16:57:42 response :
+------------
+
+2018-07-14 16:57:48 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1K4O2hw1zFwX4TTcDEyW9LM]]></FromUserName>
+<CreateTime>1531558668</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[naming_verify_success]]></Event>
+<ExpiredTime>1565314645</ExpiredTime>
+</xml>
+
+2018-07-14 16:57:48 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'createtime' => '1531558668',
+    'msgtype' => 'event',
+    'event' => 'naming_verify_success',
+    'expiredtime' => '1565314645',
+    'from' => 'oBNJw1K4O2hw1zFwX4TTcDEyW9LM',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1531558668',
+    'type' => 'event',
+  ),
+)
+
+2018-07-14 16:57:48 response :
+------------
+

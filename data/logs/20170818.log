@@ -1,0 +1,176 @@
+2017-08-18 21:34:21 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1KYjJ_wk7XN0owvcJkeOd9g]]></FromUserName>
+<CreateTime>1503063261</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-08-18 21:34:21 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1F0tiWzyMaz4T2dVMiA2Se4]]></FromUserName>
+<CreateTime>1503063261</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2017-08-18 21:34:21 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1KYjJ_wk7XN0owvcJkeOd9g',
+    'createtime' => '1503063261',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oBNJw1KYjJ_wk7XN0owvcJkeOd9g',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1503063261',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+    'content' => '商城',
+  ),
+  'module' => 'cover',
+  'rule' => '18',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '24',
+    'rid' => '18',
+    'uniacid' => '4',
+    'module' => 'cover',
+    'content' => '商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-18 21:34:21 response :
+------------
+Array:
+FromUserName : gh_457112fa2e21 ;
+ToUserName : oBNJw1KYjJ_wk7XN0owvcJkeOd9g ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-18 21:34:21 params :
+------------
+String:
+array (
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1F0tiWzyMaz4T2dVMiA2Se4',
+    'createtime' => '1503063261',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'oBNJw1F0tiWzyMaz4T2dVMiA2Se4',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1503063261',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+    'content' => '商城',
+  ),
+  'module' => 'cover',
+  'rule' => '18',
+  'priority' => '0',
+  'keyword' => 
+  array (
+    'id' => '24',
+    'rid' => '18',
+    'uniacid' => '4',
+    'module' => 'cover',
+    'content' => '商城',
+    'type' => '1',
+    'displayorder' => '0',
+    'status' => '1',
+  ),
+)
+
+2017-08-18 21:34:21 response :
+------------
+Array:
+FromUserName : gh_457112fa2e21 ;
+ToUserName : oBNJw1F0tiWzyMaz4T2dVMiA2Se4 ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2017-08-18 23:00:12 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1503068427</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-08-18 23:00:12 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'toUser',
+    'fromusername' => 'fromUser',
+    'createtime' => '1503068427',
+    'msgtype' => 'text',
+    'content' => '测试内容',
+    'msgid' => '1234567890123456',
+    'from' => 'fromUser',
+    'to' => 'toUser',
+    'time' => '1503068427',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2017-08-18 23:00:12 response :
+------------
+
+2017-08-18 23:00:13 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1503068432</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-08-18 23:00:13 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'toUser',
+    'fromusername' => 'fromUser',
+    'createtime' => '1503068432',
+    'msgtype' => 'text',
+    'content' => '测试内容',
+    'msgid' => '1234567890123456',
+    'from' => 'fromUser',
+    'to' => 'toUser',
+    'time' => '1503068432',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2017-08-18 23:00:13 response :
+------------
+

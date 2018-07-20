@@ -1,0 +1,117 @@
+2017-12-25 22:43:18 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1CIog-AUX3aR0y5pKUy-_hA]]></FromUserName>
+<CreateTime>1514212998</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://www.fphealthy.com/shop/app/index.php?i=4&c=entry&m=ewei_shopv2&do=mobile&r=lottery]]></EventKey>
+<MenuId>411154211</MenuId>
+</xml>
+
+2017-12-25 22:43:18 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1CIog-AUX3aR0y5pKUy-_hA',
+    'createtime' => '1514212998',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://www.fphealthy.com/shop/app/index.php?i=4&c=entry&m=ewei_shopv2&do=mobile&r=lottery',
+    'menuid' => '411154211',
+    'from' => 'oBNJw1CIog-AUX3aR0y5pKUy-_hA',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1514212998',
+    'type' => 'text',
+    'content' => 'http://www.fphealthy.com/shop/app/index.php?i=4&c=entry&m=ewei_shopv2&do=mobile&r=lottery',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2017-12-25 22:43:18 response :
+------------
+
+2017-12-25 22:44:09 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1CIog-AUX3aR0y5pKUy-_hA]]></FromUserName>
+<CreateTime>1514213050</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://www.fphealthy.com/shop/app/index.php?i=4&c=entry&eid=146]]></EventKey>
+<MenuId>411154211</MenuId>
+</xml>
+
+2017-12-25 22:44:09 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1CIog-AUX3aR0y5pKUy-_hA',
+    'createtime' => '1514213050',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://www.fphealthy.com/shop/app/index.php?i=4&c=entry&eid=146',
+    'menuid' => '411154211',
+    'from' => 'oBNJw1CIog-AUX3aR0y5pKUy-_hA',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1514213050',
+    'type' => 'text',
+    'content' => 'http://www.fphealthy.com/shop/app/index.php?i=4&c=entry&eid=146',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2017-12-25 22:44:09 response :
+------------
+
+2017-12-25 22:44:27 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_457112fa2e21]]></ToUserName>
+<FromUserName><![CDATA[oBNJw1CIog-AUX3aR0y5pKUy-_hA]]></FromUserName>
+<CreateTime>1514213068</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[TEMPLATESENDJOBFINISH]]></Event>
+<MsgID>77524116961361921</MsgID>
+<Status><![CDATA[success]]></Status>
+</xml>
+
+2017-12-25 22:44:27 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_457112fa2e21',
+    'fromusername' => 'oBNJw1CIog-AUX3aR0y5pKUy-_hA',
+    'createtime' => '1514213068',
+    'msgtype' => 'event',
+    'event' => 'TEMPLATESENDJOBFINISH',
+    'msgid' => '77524116961361921',
+    'status' => 'success',
+    'from' => 'oBNJw1CIog-AUX3aR0y5pKUy-_hA',
+    'to' => 'gh_457112fa2e21',
+    'time' => '1514213068',
+    'type' => 'event',
+  ),
+)
+
+2017-12-25 22:44:27 response :
+------------
+

@@ -1,0 +1,437 @@
+{template 'common/header-gw'}
+
+	<style>
+
+		.account-rank img{width:20px; height:20px;}
+
+		.alert{color:#666;padding:10px}
+
+		.text-strong{font-size:14px;font-weight:bold;}
+
+		.popover{max-width: 450px}
+
+		.popover-content{padding-top: 0;line-height: 30px}
+
+		.popover-content h5{padding-bottom: 5px}
+
+	</style>
+
+	
+
+	<div class="clearfix" style="margin-bottom:5em;">
+
+		
+		<div >
+            
+            {if !empty($_W['isfounder'])}
+                                <div style="text-align:center; width:100%;">     
+								<a href="{php echo url('account/display', array('type' => $_GPC['type'], 's_uniacid' => $_GPC['s_uniacid'], 'keyword' => $_GPC['keyword']));}"  class="btn {if $_GPC['expiretime'] == ''}btn-primary{else}btn-default{/if}" style="width: 80px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border:none;">不限</a>
+
+								<a href="{php echo url('account/display', array('type' => $_GPC['type'], 's_uniacid' => $_GPC['s_uniacid'], 'keyword' => $_GPC['keyword'], 'expiretime' => '3'));}"  class="btn {if $_GPC['expiretime'] == '3'}btn-primary{else}btn-default{/if}" style="width: 80px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border:none;">三天内</a>
+
+								<a href="{php echo url('account/display', array('type' => $_GPC['type'], 's_uniacid' => $_GPC['s_uniacid'], 'keyword' => $_GPC['keyword'], 'expiretime' => '7'));}"  class="btn {if $_GPC['expiretime'] == '7'}btn-primary{else}btn-default{/if}" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border:none;">一周内</a>
+
+								<a href="{php echo url('account/display', array('type' => $_GPC['type'], 's_uniacid' => $_GPC['s_uniacid'], 'keyword' => $_GPC['keyword'], 'expiretime' => '30'));}"  class="btn {if $_GPC['expiretime']== '30'}btn-primary{else}btn-default{/if}" style="border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border:none;">一月内</a>
+                                </div>
+								{/if}
+
+				<form action="./index.php" method="get" role="form" class="form-horizontal" style="border-radius: 5px;">
+
+					<input type="hidden" name="c" value="account">
+
+					<input type="hidden" name="a" value="display">					
+
+					
+
+					<div class="form-group" style="margin-top:0px; margin-bottom:0px;">
+                    
+
+						<div class="col-sm-8 col-lg-12 col-xs-12">                            
+							<div class="input-group">
+
+								<input type="hidden" name="type" value="{$_GPC['type']}">
+
+								<input type="hidden" name="expiretime" value="{$_GPC['expiretime']}">
+
+								<input type="text" class="form-control {if empty($_GPC['keyword']) && !empty($_GPC['s_uniacid'])}hide{/if}" placeholder="请输入微信公众号名称" name="keyword" id="s_keyword" value="{$_GPC['keyword']}" style="padding:25px 15px;">
+
+								<input type="text" style="padding:25px 15px;" class="form-control {if empty($_GPC['s_uniacid'])}hide{/if}" placeholder="请输入微信公众号ID" name="s_uniacid" id="s_uniacid" value="{$_GPC['s_uniacid']}">
+
+								<div class="input-group-btn">
+                                
+                                <button type="button" style="padding:15px;" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+
+									<ul class="dropdown-menu dropdown-menu-right" role="menu" style="left:-50px;">
+
+										<li><a href="javascript:;" onclick="$('#s_uniacid').addClass('hide').val('');$('#s_keyword').removeClass('hide');">根据公众号名称搜索</a></li>
+
+										<li><a href="javascript:;" onclick="$('#s_uniacid').removeClass('hide');$('#s_keyword').addClass('hide').val('');">根据公众号ID搜索</a></li>
+
+									</ul>
+                                
+                             	<button style="padding:15px; background:#138ed4; color:#fff; border-color:#138ed4;" class="btn btn-default"><i class="fa fa-search"></i> 搜索</button>
+                                
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</form>
+
+			</div>
+
+		<ul class="list-unstyled account">
+
+			{loop $list $uni}
+
+			{php $subaccount = count($uni['details']);}
+
+			<li style="width:300px; margin-right:20px; float:left;">
+
+				
+
+					<ul class="panel-body list-group">
+
+						{loop $uni['details'] $account}
+
+						<li class="row list-group-item" style="line-height:30px; padding:0;">
+
+							<div style="text-align:center;">
+                              <div style="background:#138ed4; padding-bottom:5px;">
+								<img src="{php echo tomedia('headimg_'.$account['acid'].'.jpg');}?time={php echo time()}" style="border-radius:50%; margin-top:20px; border: 5px solid rgba(256,256,256,0.3);"  width="120" height="120"  onerror="this.src='resource/images/gw-wx.gif'" />
+                                
+                                <div style="color:#d3efff;">{$account['name']}</div>
+                                
+                               </div> 
+                               
+                               
+                               
+                              <p style="margin:0; padding:0;">
+                               <span style="width:80px; padding-top:15px; text-align:center; display:inline-block;">{if $account['isconnect'] == 1}<i class="fa fa-2x fa-check-circle text-success" data-toggle="tooltip" data-placement="top" title='接入状态 : {if $account['type'] == 3}登录授权{else}成功接入{/if}'></i>{$types[$account['type']]['title']}{else}<i class="fa fa-2x fa-times-circle text-warning" data-toggle="tooltip" data-placement="top" title='{if $account['type'] == 3}登录授权失败{else}公众号接入状态显示“未接入”解决方案：进入微信公众平台，依次选择: 开发者中心 -> 修改配置，然后将对应公众号在
+
+								平台的url和token复制到微信公众平台对应的选项，公众平台会自动进行检测{/if}'></i>{$types[$account['type']]['title']}{/if}</span>
+                               </p>
+
+                                <p style="margin:0; padding:0;">
+                                <span class="setmeal-hover" data-uid="{$uni['setmeal']['uid']}"  data-name="{$uni['name']}" data-groupid="{$uni['setmeal']['groupid']}" data-uniacid="{$uni['uniacid']}">
+
+									套餐 : {$uni['setmeal']['groupname']}
+
+								</span>
+                                
+                                 
+                                
+                                 </p>
+
+                                <span>服务有效期 : {$uni['setmeal']['timelimit']}</span> 
+                                
+                                <div class="list-group-bottom">
+
+						
+
+						<div class="">
+
+							{if $uni['role'] == 'founder'}
+
+							<a href="{php echo url('account/post-step', array('step' => '3', 'uniacid' => $uni['uniacid'], 'from' => 'list'))}"><i class="fa fa-key" title="设置权限"></i>权限</a>
+
+							{/if}
+
+							{if $uni['role'] == 'founder' || $uni['role'] == 'manager'}
+
+							<a href="{php echo url('account/permission', array('uniacid' => $uni['uniacid']))}"><i class="fa fa-user" title="操作员管理"></i>操作员</a>
+
+							{if $subaccount == 1}<a href="{php echo url('account/post', array('uniacid' => $uni['uniacid']))}"><i class="fa fa-edit" title="编辑"></i>编辑</a>{/if}
+
+							<a href="{php echo url('account/display/delete', array('uniacid' => $uni['uniacid'], 'acid' => $uni['default_acid']))}" onclick="return confirm('删除主公众号其所属的子公众号也会一起被放入回收站，确认吗？（可以在回收站中恢复公众号）');return false;"><i class="fa fa-times" title="删除"></i>删除</a>
+
+							{/if}
+
+						</div>
+
+					</div>
+                                
+                                
+                                <div><a href="{php echo url('account/switch', array('uniacid' => $uni['uniacid']))}" class="manage" style="display:block; background:#138ed4; color:#fff; padding:8px 0;">进入公众号平台</a></div>
+
+							</div>
+
+							
+
+							<div class="">
+
+								
+
+								{if $subaccount > 1 && $uni['role'] <> 'operator'}
+
+									<div style="display:inline-block; border-left:1px #DDD solid; padding-left:20px; margin-left:20px;">
+
+									{if $account['acid'] != $uni['default_acid']}
+
+										<a data-toggle="tooltip" data-placement="top" title='设置为默认后，主公号与此子号绑定，后台一切接口权限将从此子号获取' href="{php echo url('account/default',  array('acid' => $account['acid'], 'uniacid' => $account['uniacid']))}" class="btn btn-sm btn-primary" style="color:#fff;"><i class="fa fa-pencil"></i> 设为默认</a>
+
+									{/if}
+
+									<a href="{php echo url('account/summary', array('acid' => $account['acid'], 'uniacid' => $account['uniacid']))}" class="btn btn-sm btn-default"><i class="fa fa-bar-chart-o"></i>详情</a>
+
+									{if $account['acid'] == $uni['default_acid']}
+
+										<a href="{php echo url('account/post', array('uniacid' => $account['uniacid']))}" class="btn btn-sm btn-default"><i class="fa fa-pencil"></i>编辑</a>
+
+									{else}
+
+										<a href="{php echo url('account/post', array('acid' => $account['acid'], 'uniacid' => $account['uniacid']))}" class="btn btn-sm btn-default"><i class="fa fa-pencil"></i>编辑</a>
+
+									{/if}
+
+									{if $account['acid'] != $uni['default_acid']}
+
+									<a href="{php echo url('account/display/delete', array('acid' => $account['acid']))}" onclick="return confirm('确认放入回收站吗？');return false;" class="btn btn-sm btn-default"><i class="fa fa-times"></i>删除</a>
+
+									{/if}
+
+									</div>
+
+								{/if}
+
+							</div>
+
+						</li>
+
+						{/loop}
+                        
+                        
+
+					</ul>				
+
+			</li>
+
+			{/loop}
+            
+            
+            <li style="width:300px; margin-right:20px; float:left;">
+
+				
+
+					<ul class="panel-body list-group">
+
+						
+						<li class="row list-group-item" style="line-height:30px; padding:0;">
+
+							<div style="text-align:center;">
+                              <div style="background:#fff; padding-bottom:5px;">
+								<img src="resource/images/gw-wx.gif" style="border-radius:50%; margin-top:20px; border: 5px solid rgba(200,200,200,0.3);" width="120" height="120" onerror="this.src='resource/images/gw-wx.gif'">
+                                
+                                <div style="margin-top:35px;">您还可以绑定{$stat['uniacid_limit']}个公众号</div>
+                                
+                               </div> 
+                               
+                               
+                               <div class="input-group" style=" text-align:center;display:inline-block; background:#fff; margin-top:30px; height:135px;">
+                        
+                                    <a class="btn btn-primary" style="display:inline-block; margin-bottom:15px; color:#fff;" href="{url 'account/post-step'}"><i class="fa fa-plus"></i> 手动绑定公众号</a><br>
+
+                                    {if $_W['setting']['platform']['authstate']}<a  class="btn btn-success" style="display:inline-block; color:#fff;"  href="{$authurl}"><i class="fa fa-weixin"></i> 授权绑定公众号</a>{/if}
+                        
+                                </div>
+                             
+                                
+                               
+
+						</li>
+
+						                        
+                        
+
+					</ul>				
+
+			</li>
+
+		</ul>
+
+	<div class="pull-right">{$pager}</div>
+
+	</div>
+
+<script type="text/javascript">
+
+	require(['raty'], function(raty) {
+
+		$('.account-rank').each(function(){
+
+			var account = $(this);
+
+			var id = account.data("account-id");
+
+			var rank = account.data("rank");
+
+			account.raty({
+
+				cancel:!0,
+
+				cancelOn:"../images/cancel-custom-on.png",
+
+				cancelOff:"../images/cancel-custom-off.png",
+
+				cancelPlace:"left",
+
+				cancelHint:"重置",
+
+				hints:["1","2","3","4","5"],
+
+				number:6,
+
+				path:"./resource/images/",
+
+				starOff:"star-off-big.png",
+
+				starOn:"star-on-big.png",
+
+				starType:"img",
+
+				size:16,
+
+				score:rank,
+
+				targetKeep:!0,
+
+				click:function(account){$.post("./index.php?c=account&a=display&do=rank",{id:id,rank:account}, function(data){location.reload();},"json")}
+
+			})
+
+		});
+
+	});
+
+	require(['bootstrap'],function($){
+
+		$('[data-toggle="tooltip"]').hover(function(){
+
+			$(this).tooltip('show');
+
+		},function(){
+
+			$(this).tooltip('hide');
+
+		});
+
+		$('.setmeal-hover').hover(function(){
+
+			var uid = $(this).data('uid');
+
+			var groupid = $(this).data('groupid');
+
+			var uniacid = $(this).data('uniacid');
+
+			var title = $(this).data('name');
+
+			var obj = $(this);
+
+			if(groupid == -1) {
+
+				obj.popover({
+
+					'html':true,
+
+					'placement':'right',
+
+					'trigger':'manual',
+
+					//'title':title,
+
+					'content':'<h5>可用的服务套餐</h5><div style="margin-top: -15px"><span class="label label-success">所有服务</span></div>'
+
+				});
+
+				obj.popover('show');
+
+			}else {
+
+				$.post("{php echo url('account/display/package')}", {uid:uid, groupid:groupid, uniacid:uniacid}, function(data){
+
+					var data = $.parseJSON(data);
+
+					var content = '';
+
+					if(data.message.message.groupname.length > 0) {
+
+						content += '<h5>可用的服务套餐</h5>';
+
+						content += '<div style="margin-top: -15px">';
+
+						$.each(data.message.message.groupname, function (i,val) {
+
+								content += '<span class="label label-success">'+val.name+'</span> ';
+
+						});
+
+						content += '</div>';
+
+					}
+
+					if(data.message.message.modules && data.message.message.modules.length > 0) {
+
+						content += '<h5>附加的模块权限</h5>';
+
+						content += '<div style="margin-top: -15px">';
+
+						$.each(data.message.message.modules, function (i,val) {
+
+							content += '<span class="label label-success">'+val.title+'</span> ';
+
+						});
+
+						content += '</div>';
+
+					}
+
+					if(data.message.message.templates && data.message.message.templates.length > 0) {
+
+						content += '<h5>附加的模板权限</h5>';
+
+						content += '<div style="margin-top: -15px">';
+
+						$.each(data.message.message.templates, function (i,val) {
+
+							content += '<span class="label label-success">'+val.title+'</span> ';
+
+						});
+
+						content += '</div>';
+
+					}
+
+					obj.popover({
+
+						'html':true,
+
+						'placement':'right',
+
+						'trigger':'manual',
+
+						//'title':title,
+
+						'content':content
+
+					});
+
+					obj.popover('show');
+
+				});
+
+			}
+
+		}, function(){
+
+			$(this).popover('hide');
+
+		});
+
+	});
+
+</script>
+
+{template 'common/footer-gw'}

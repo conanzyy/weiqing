@@ -1,0 +1,131 @@
+{template 'common/header'}
+{template 'common'}
+<style>
+.form_short{
+  width: 5%;
+  height: 34px;
+  padding: 6px 12px;
+  margin: 0px 5px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+</style>
+<ul class="nav nav-tabs">
+	<li {if $op == 'display'} class="active" {/if}><a href="{php echo $this->createWebUrl('redpack',array('op' =>'display'))}">红包套餐</a></li>
+	<li{if empty($redpack['id']) && $op == 'post'} class="active" {/if}><a href="{php echo $this->createWebUrl('redpack',array('op' =>'post'))}">添加红包套餐</a></li>
+	{if !empty($redpack['id']) && $op== 'post'} <li class="active"><a href="{php echo $this->createWebUrl('redpack',array('op' =>'post','id'=>$redpack['id']))}">编辑红包</a></li> {/if}
+</ul>
+
+{if $op == 'display'}
+<div class="main panel panel-default">
+	<div class="panel-body table-responsive">
+		<table class="table table-hover">
+			<thead class="navbar-inner">
+				<tr>
+					<th style="width:100px;">红包套餐编号</th>
+					<th style="width:100px;">累计金额范围</th>
+					<th style="width:120px;">可提现金额</th>
+					<th style="width:150px;">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				{loop $list $item}
+				<tr>
+					<td>{$item['id']}</td>
+					<td>{$item[cashmin]}分<=累计金额<={$item[cashmax]}分</td>
+					<td>{$item['cashmoney']}分</td>
+					<td style="text-align:left;">
+						<a href="{php echo $this->createWebUrl('redpack', array('op' => 'post', 'id' => $item['id']))}" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="修改"><i class="fa fa-pencil"></i></a>
+							<a href="{php echo $this->createWebUrl('red', array('pid' => $item['id']))}" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="概率设置"><i class="fa fa-th-large"></i></a>
+						<a onclick="return confirm('套餐删除后里面的红包概率将不存在，确认删除吗？');return false;" href="{php echo $this->createWebUrl('redpack', array('op' => 'delete', 'id' => $item['id']))}" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="删除"><i class="fa fa-times"></i></a>
+				</td>
+				</tr>
+				{/loop}
+				
+			</tbody>
+                    <div class="col-sm-20 col-xs-12">
+                        <div class="alert alert-info">
+                       特别提醒：红包套餐对应不同的概率和不同的提现额度限制。
+                         
+                        </div>
+                    </div>
+              
+		</table>
+		{$pager}
+		
+	</div>
+</div>
+
+<script>
+	require(['bootstrap'],function($){
+		$('.btn').hover(function(){
+			$(this).tooltip('show');
+		},function(){
+			$(this).tooltip('hide');
+		});
+	});
+</script>
+
+{elseif $op == 'post'}
+<div class="main">
+	<form action="" method="post" class="form-horizontal form" enctype="multipart/form-data" onsubmit='return formcheck()'>
+		<input type="hidden" name="id" value="{$redpack['id']}" />
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				红包套餐设置
+			</div>
+			<div class="panel-body">
+				<div class="form-group">
+					<label class="col-xs-12 col-sm-3 col-md-2 control-label">累计最小金额</label>
+					<div class="col-sm-9 col-xs-12">
+					<div class="input-group input-medium">
+		<input type="text" name="cashmin" id='cashmin' class="form-control input-medium" value="{$redpack['cashmin']}" />
+							<span class="input-group-addon">分</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-xs-12 col-sm-3 col-md-2 control-label">累计最大金额</label>
+					<div class="col-sm-9 col-xs-12">
+					<div class="input-group input-medium">
+		<input type="text" name="cashmax" id='cashmax' class="form-control input-medium" value="{$redpack['cashmax']}" />
+							<span class="input-group-addon">分</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-xs-12 col-sm-3 col-md-2 control-label">可提现最小金额</label>
+					<div class="col-sm-9 col-xs-12">
+						<div class="input-group input-medium">
+		<input type="text" name="cashmoney" id='cashmoney' class="form-control input-medium" value="{$redpack['cashmoney']}" />
+							<span class="input-group-addon">分</span>
+						</div>
+					</div>
+				</div>
+
+                
+		</div>
+	</div>
+	<div class="form-group col-sm-12">
+		<input type="submit" name="submit" value="提交" class="btn btn-primary col-lg-1" onclick="return formcheck()" />
+		<input type="hidden" name="token" value="{$_W['token']}" />
+	</div>
+	</form>
+</div>
+
+
+{/if}
+
+{template 'common/footer'}

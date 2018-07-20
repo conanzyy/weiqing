@@ -1,0 +1,27 @@
+
+黑锐源码社区 微鱼微信管理系统2017-4-26
+
+php最佳版本推荐5.4！
+
+1、使用数据库管理工具navicat或者phpmyadmin导入根目录的sql数据库文件
+
+2、修改数据库配置文件data/config.php的信息为自己的：
+
+$config['db']['master']['host'] = '127.0.0.1'; //数据库地址 win主机用127.0.0.1 linux主机用localhost
+$config['db']['master']['username'] = 'root';//数据库账号
+$config['db']['master']['password'] = 'root';//数据库密码
+$config['db']['master']['port'] = '3306'; 
+$config['db']['master']['database'] = 'wq19';//数据库名称
+
+
+3、打开站点，默认账号密码为admin  admin
+
+常见问题说明：
+
+1.如何修改默认首页的QQ：打开\web\themes\default\account\welcome.html 文件修改即可！
+
+
+本版本为黑锐源码社区独家全网发布制作！bbs.heirui.cn  ！申请一键更新 请自助论坛提交授权，实时生效,超级方便http://bbs.heirui.cn/shouquan-wq.html！
+
+
+黑锐微鱼应用市场：http://bbs.heirui.cn/module-index.html 在线一键自助云安装模块应用！

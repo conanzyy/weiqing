@@ -1,0 +1,59 @@
+<script type="text/javascript">
+		require(['bootstrap']);
+		$('.js-clip').each(function(){
+			util.clip(this, $(this).attr('data-url'));
+		});
+	</script>
+<!--main content end-->
+</section>
+<script src="./themes/weiyu/static/js/jquery.nicescroll.js" type="text/javascript"></script>
+<script type="text/javascript">
+    //    sidebar toggle
+        $(function() {
+            function responsiveView() {
+                var wSize = $(window).width();
+                if (wSize <= 768) {
+                    $('#mob_container').addClass('sidebar-close');
+                    $('#sidebar > ul').hide();
+					$('#submemu').hide();
+                }
+    
+                if (wSize > 768) {
+                    $('#mob_container').removeClass('sidebar-close');
+                    $('#sidebar > ul').show();
+					$('#submemu').show();
+                }
+            }
+            $(window).on('load', responsiveView);
+            $(window).on('resize', responsiveView);
+        });
+    
+        $('.icon-reorder').click(function () {
+            if ($('#submemu').is(":visible") === true) {
+				$('.subcontentwarp').css({
+                    'width': '100%'
+                });                
+				$('#submemu').hide();
+                $("#mob_container").addClass("sidebar-closed");
+            } else {             
+				$('.subcontentwarp').removeAttr("style");
+               
+				$('#submemu').show();
+                
+                $("#mob_container").removeClass("sidebar-closed");
+            }
+        });
+    
+    // custom scrollbar
+    $("html").niceScroll({styler:"fb",cursorcolor:"#138ed4", cursorwidth: '6', cursorborderradius: '10px',autohidemode: false, background: '#404040', cursorborder: '0', zindex: '1000'});
+	
+	var h = document.documentElement.clientHeight;
+	$("#mob_container").css('min-height',h-30);	
+	$(window).resize(function() {
+		var h = document.documentElement.clientHeight;
+		$("#mob_container").css('min-height',h-30);
+	});
+	
+    </script>
+</body>
+</html>

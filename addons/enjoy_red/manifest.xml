@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://bbs.heirui.cn" versionCode="0.6">
+	<application setting="true">
+		<name><![CDATA[翻红包提现版]]></name>
+		<identifie><![CDATA[enjoy_red]]></identifie>
+		<version><![CDATA[2.0.1]]></version>
+		<type><![CDATA[activity]]></type>
+		<ability><![CDATA[翻红包，感觉太酸爽]]></ability>
+		<description><![CDATA[想怎么翻就怎么翻]]></description>
+		<author><![CDATA[黑锐源码社区]]></author>
+		<url><![CDATA[http://bbs.heirui.cn/]]></url>
+	</application>
+	<platform>
+		<subscribes>
+			<message type="text" />
+			<message type="image" />
+			<message type="subscribe" />
+			<message type="unsubscribe" />
+			<message type="click" />
+			<message type="view" />
+		</subscribes>
+		<handles>
+			<message type="image" />
+			<message type="click" />
+			<message type="text" />
+		</handles>
+		<rule embed="false" />
+	</platform>
+	<bindings>
+		<cover>
+			<entry title="红包入口设置" do="entry" state="data" direct="false" />
+		</cover>
+		<menu>
+			<entry title="活动设置" do="basic" state="data" direct="false" />
+			<entry title="红包设置" do="red" state="data" direct="false" />
+			<entry title="红包记录" do="log" state="data" direct="false" />
+		</menu>
+	</bindings>
+	<install><![CDATA[
+
+DROP TABLE IF EXISTS `ims_enjoy_red_back`;
+CREATE TABLE `ims_enjoy_red_back` (
+  `id` int(200) unsigned NOT NULL AUTO_INCREMENT,
+  `uniacid` int(50) NOT NULL,
+  `openid` varchar(100) NOT NULL,
+  `money` float(50,2) NOT NULL DEFAULT '0.00',
+  `createtime` int(30) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=13178 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `ims_enjoy_red_chance`;
+CREATE TABLE `ims_enjoy_red_chance` (
+  `id` int(255) unsigned NOT NULL AUTO_INCREMENT,
+  `uniacid` int(20) DEFAULT NULL,
+  `openid` varchar(200) DEFAULT NULL,
+  `chance` varchar(2) DEFAULT NULL,
+  `createtime` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=98499 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `ims_enjoy_red_chance_log`;
+CREATE TABLE `ims_enjoy_red_chance_log` (
+  `id` int(100) unsigned NOT NULL AUTO_INCREMENT,
+  `uniacid` int(20) DEFAULT NULL,
+  `openid` varchar(100) DEFAULT NULL,
+  `puid` int(20) DEFAULT NULL,
+  `chance` int(10) DEFAULT NULL,
+  `createtime` int(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=112251 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `ims_enjoy_red_fans`;
+CREATE TABLE `ims_enjoy_red_fans` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `uniacid` int(11) unsigned NOT NULL,
+  `openid` varchar(40) NOT NULL DEFAULT '',
+  `proxy` varchar(40) NOT NULL DEFAULT '',
+  `unionid` varchar(40) NOT NULL DEFAULT '',
+  `nickname` varchar(20) NOT NULL DEFAULT '',
+  `gender` varchar(2) DEFAULT '',
+  `state` varchar(20) NOT NULL DEFAULT '',
+  `city` varchar(20) NOT NULL DEFAULT '',
+  `country` varchar(20) NOT NULL DEFAULT '',
+  `avatar` varchar(500) NOT NULL DEFAULT '',
+  `status` tinyint(4) NOT NULL DEFAULT '0',
+  `puid` int(20) DEFAULT NULL,
+  `black` int(2) NOT NULL DEFAULT '0',
+  `total` varchar(4) NOT NULL DEFAULT '0',
+  `cashed` varchar(4) NOT NULL DEFAULT '0',
+  `subscribe` int(2) DEFAULT NULL,
+  `subscribe_time` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`uid`),
+  KEY `uniacid` (`uniacid`),
+  KEY `openid` (`openid`),
+  KEY `proxy` (`proxy`),
+  KEY `nickname` (`nickname`)
+) ENGINE=MyISAM AUTO_INCREMENT=104116 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `ims_enjoy_red_log`;
+CREATE TABLE `ims_enjoy_red_log` (
+  `id` int(255) unsigned NOT NULL AUTO_INCREMENT,
+  `uniacid` int(20) DEFAULT NULL,
+  `openid` varchar(200) DEFAULT NULL,
+  `money` float(20,2) DEFAULT NULL,
+  `createtime` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=269500 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `ims_enjoy_red_pack`;
+CREATE TABLE `ims_enjoy_red_pack` (
+  `id` int(20) unsigned NOT NULL AUTO_INCREMENT,
+  `uniacid` int(20) NOT NULL,
+  `cashmin` int(50) NOT NULL,
+  `cashmax` int(50) NOT NULL,
+  `cashmoney` int(50) NOT NULL,
+  `createtime` varchar(30) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `ims_enjoy_red_reply`;
+CREATE TABLE `ims_enjoy_red_reply` (
+  `id` int(50) unsigned NOT NULL AUTO_INCREMENT,
+  `uniacid` int(20) DEFAULT NULL,
+  `title` varchar(200) DEFAULT NULL,
+  `rule` varchar(1000) DEFAULT NULL,
+  `adept` varchar(1000) DEFAULT NULL,
+  `state` varchar(50) DEFAULT NULL,
+  `city` varchar(50) DEFAULT NULL,
+  `color` varchar(20) DEFAULT NULL,
+  `apic` varchar(200) DEFAULT NULL,
+  `fpic` varchar(200) DEFAULT NULL,
+  `bgpic` varchar(200) DEFAULT NULL,
+  `redpic` varchar(200) DEFAULT NULL,
+  `redpic1` varchar(200) DEFAULT NULL,
+  `redpic2` varchar(200) DEFAULT NULL,
+  `redpic3` varchar(200) DEFAULT NULL,
+  `redpic4` varchar(200) DEFAULT NULL,
+  `redpic5` varchar(200) DEFAULT NULL,
+  `redpic6` varchar(200) DEFAULT NULL,
+  `custom` int(2) NOT NULL DEFAULT '0',
+  `sucai` varchar(200) DEFAULT NULL,
+  `chance` int(20) DEFAULT NULL,
+  `share_chance` int(20) DEFAULT NULL,
+  `share_icon` varchar(200) DEFAULT NULL,
+  `share_title` varchar(200) DEFAULT NULL,
+  `share_content` varchar(200) DEFAULT NULL,
+  `vnum` int(200) DEFAULT NULL,
+  `vmin` int(50) DEFAULT NULL,
+  `vmax` int(50) DEFAULT NULL,
+  `subscribe` int(2) DEFAULT NULL,
+  `unit` varchar(50) DEFAULT NULL,
+  `times` int(50) NOT NULL DEFAULT '200',
+  `cashgz` int(2) NOT NULL DEFAULT '0',
+  `oneway` int(2) NOT NULL DEFAULT '1',
+  `stime` varchar(200) DEFAULT NULL,
+  `etime` varchar(200) DEFAULT NULL,
+  `locationtype` int(2) DEFAULT '0',
+  `cashstime` int(2) DEFAULT '0',
+  `cashetime` int(2) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `ims_enjoy_red_rule`;
+CREATE TABLE `ims_enjoy_red_rule` (
+  `id` int(200) unsigned NOT NULL AUTO_INCREMENT,
+  `uniacid` int(50) unsigned DEFAULT NULL,
+  `rmax` int(20) DEFAULT NULL,
+  `rmin` int(20) DEFAULT NULL,
+  `rchance` int(10) DEFAULT NULL,
+  `rcount` int(100) DEFAULT NULL,
+  `pid` int(2) DEFAULT NULL,
+  `createtime` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=133 DEFAULT CHARSET=utf8;
+	
+	]]></install>
+	<uninstall><![CDATA[
+	DROP TABLE IF EXISTS `ims_enjoy_red_reply`;	   
+	DROP TABLE IF EXISTS `ims_enjoy_red_rule`;	   
+	DROP TABLE IF EXISTS `ims_enjoy_red_fans`;	   
+	DROP TABLE IF EXISTS `ims_enjoy_red_chance`;	   
+	DROP TABLE IF EXISTS `ims_enjoy_red_log`;	   
+	DROP TABLE IF EXISTS `ims_enjoy_red_chance_log`;	   
+	]]></uninstall>
+	<upgrade><![CDATA[upgrade.php]]></upgrade>
+</manifest>
